@@ -27,9 +27,9 @@
     
     /**
      * <strong>nécessite le module Rotatable</strong>
-     * Rotation de l'élément. Fonctionne bien avec les éléments SVG. Les r�actions sont un peu bizarres avec les éléments HTML, à �viter.<br/><br/>
+     * Rotation de l'élément. Fonctionne bien avec les éléments SVG. Les réactions sont un peu bizarres avec les éléments HTML, à éviter.<br/><br/>
      * @param arg argument JSYG faisant référénce à l'élément
-     * @param opt optionnel, objet définissant les options. Si défini, la rotation est activ�e
+     * @param opt optionnel, objet définissant les options. Si défini, la rotation est activée
      * @returns {Rotatable}
      */
     function Rotatable(arg,opt) {
@@ -69,7 +69,7 @@
      */
     Rotatable.prototype.className = false;
     /**
-     * Fonction(s) à exécuter quand on pr�pare un d�placement (mousedown sur le contr�le)
+     * Fonction(s) à exécuter quand on prépare un déplacement (mousedown sur le controle)
      */
     Rotatable.prototype.onstart=null;
     /**
@@ -89,7 +89,7 @@
      */
     Rotatable.prototype.onend=null;
     /**
-     * Indique si la rotation est activ�e ou non
+     * Indique si la rotation est activée ou non
      */
     Rotatable.prototype.enabled = false;
     /**
@@ -238,7 +238,7 @@
     };
     
     /**
-     * D�sactivation de la rotation
+     * Désactivation de la rotation
      * @returns {Rotatable}
      */
     Rotatable.prototype.disable = function() { return this; };
@@ -263,7 +263,7 @@
      *	},
      *	event:'ctrl-left-mousedown',
      *	ondragend:function() {
-     *		alert("Rotation de l'élément : "+ new JSYG(this).rotate() + "�");
+     *		alert("Rotation de l'élément : "+ new JSYG(this).rotate() + "°");
      *	}
      *});
      */
