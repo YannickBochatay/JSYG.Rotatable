@@ -1,6 +1,11 @@
 (function(root,factory) {
     
-    if (typeof define != "undefined" && define.amd) define("jsyg-rotatable",["jsyg"],factory);
+    if (typeof module == "object" && typeof module.exports == "object") {
+      module.exports = factory( require("jsyg") );
+    }
+    else if (typeof define != "undefined" && define.amd) {
+      define("jsyg-rotatable",["jsyg"],factory);
+    }
     else if (typeof JSYG != "undefined") {
         if (JSYG.Matrix && JSYG.StdConstruct) factory(JSYG);
         else throw new Error("Dependency is missing");
