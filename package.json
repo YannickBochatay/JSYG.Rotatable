@@ -1,6 +1,6 @@
 {
   "name": "jsyg-rotatable",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Rotatable plugin for JSYG framework",
   "main": "JSYG.Rotatable.js",
   "directories": {
@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/YannickBochatay/JSYG.Rotatable#readme",
   "dependencies": {
-    "jsyg": ""
+    "jsyg": "^1.0.2"
   }
 }

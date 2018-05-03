@@ -11,11 +11,6 @@ Rotatable plugin for [JSYG framework](https://github.com/YannickBochatay/JSYG)
 npm install jsyg-rotatable
 ```
 
-##### with bower
-```shell
-bower install jsyg-rotatable
-```
-
 
 ### Example
 
